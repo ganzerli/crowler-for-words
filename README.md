@@ -1,7 +1,7 @@
 # All words from all links found in a domain are saved into a file
 Using lcurl, you need to install first lcurl
 
-Crowling domain: www.domain.com
+Crowling domain:
   -cuts all style
   -cuts all script
   -cuts all HTML tags 
