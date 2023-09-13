@@ -1,4 +1,3 @@
-
 // just to test
 void html_printHtml(char* data, char* url){
     // manage http response
@@ -8,6 +7,7 @@ void html_printHtml(char* data, char* url){
         free(data);
     }
 }
+
 // manage HTML call with libcurl functions
 char* html_getHtml(char* data, char* url){
 
@@ -22,8 +22,8 @@ char* html_getHtml(char* data, char* url){
 void html_cut_script_style(char* resultbuffer ,char* data){
 
     char c;
-    signed int i = 0;
-    signed int i_result = 0;
+    int i = 0;
+    int i_result = 0;
     char ignore_is_on = 'N';
     char regc = '#';
 
@@ -102,8 +102,8 @@ void html_cut_script_style(char* resultbuffer ,char* data){
 void html_filterHtml(char* resultbuffer ,char* data){
 
     char c;
-    signed int i = 0;
-    signed int i_result = 0;
+    int i = 0;
+    int i_result = 0;
     char ignore_is_on = 'N';
     
     while(data[i]!='\0') {
@@ -141,7 +141,7 @@ void html_filterHtml(char* resultbuffer ,char* data){
 //                                                                                  char * doc_buffer          char * doc_buffer
 // FUNCTION TO cut off spaces of the html document buffer, redirectly in the buffer ["buffer buf bf buffer"] , ["buffer  buf      bf         '\n'    buffer"]
     char lastch = 'a';
-    signed int offset = 0;
+    int offset = 0;
 
     for(int i = 0 ; resultbuffer[i] != '\0'; i++){
 
@@ -170,8 +170,8 @@ void html_filterHtml(char* resultbuffer ,char* data){
 void html_getLinks(char* url ,char* callable_links, char* resultbuffer ,char * data){
 
     char c;
-    signed int i = 0;
-    signed int i_result = 0;
+    int i = 0;
+    int i_result = 0;
     char ignore_is_on = 'N';
     char regc = '#';
     
@@ -225,7 +225,7 @@ void html_getLinks(char* url ,char* callable_links, char* resultbuffer ,char * d
     char ch = 'a';
     char lastch = 'a';
     int offset = 0;
-    short signed int eslasches = 0;                                     // i like very much spanish accent
+    short int eslasches = 0;                                     // i like very much spanish accent
 
     for(int i = 0; resultbuffer[i] != '\0'; i++){
         ch = resultbuffer[i];
