@@ -1,5 +1,5 @@
 # All words from all links found in a domain are saved into a file
-Using lcurl, you need to install first lcurl
+Crowler in C, lcurl is needed, you have to install also lcurl.
 
 Crowling domain:
   -cuts all style
