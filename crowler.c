@@ -8,7 +8,7 @@ int main(void) {
     FILE * _fp;
     char* url = malloc(sizeof(char) * 256);                                 // URL max 256 chars
     char* buffer = malloc(sizeof(char) * 256);                              // I/O read max 256 chars
-    const char _con_[] ={ 'h','t','t','p','s',':', '/', '/' };  
+    const char _con_[] ={ 'h','t','t','p','s',':', '/', '/','\0' };  
     char _char = 'a';
 
     strcat(url,_con_);                                                      // concat https:            // with URL
